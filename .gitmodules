@@ -1,0 +1,13 @@
+[submodule "mattekirwinblog/public"]
+	path = mattekirwinblog/public
+	url = https://github.com/mkirwin/mattekir.win
+	branch = main
+[submodule "mattekirwinblog/themes/JuiceBar"]
+	path = mattekirwinblog/themes/JuiceBar
+	url = https://github.com/hotjuicew/hugo-JuiceBar.git
+[submodule "mattekirwinblog/themes/ananke"]
+	path = mattekirwinblog/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "mattekirwinblog/themes/hugo-book"]
+	path = mattekirwinblog/themes/hugo-book
+	url = https://github.com/alex-shpak/hugo-book

@@ -1,6 +1,6 @@
 ---
-title: "comics"
-weight: 3
+title: "digital intentionalism"
+weight: 1
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -8,5 +8,4 @@ weight: 3
 # bookComments: false
 # bookSearchExclude: false
 ---
-# comics
-- [them](https://www.webtoons.com/en/canvas/them/list?title_no=849768&title_no=849768). my first webtoon!
+# digital intentionalism starter kit

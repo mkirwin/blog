@@ -10,6 +10,12 @@ weight: 1
 ---
 # milestones
 
+## 2024 (27)
+- baked a lot of sourdough bread :D
+- took a break from everything
+- learned to identify a mourning dove (Zenaida macroura)
+- tried flameworking (glass) and throwing on a pottery wheel
+
 ## 2023 (26)
 - biked from boston to canada
 - hit by (someone driving) a car while on bike

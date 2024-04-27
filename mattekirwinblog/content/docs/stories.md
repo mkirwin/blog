@@ -30,6 +30,7 @@ weight: 1
 - the owl house
 - avatar: the last airbender
 - the dragon prince
+- one piece (netflix, live)
 - futurama
 - extraordinary attorney woo
 - sense8

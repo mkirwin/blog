@@ -14,9 +14,11 @@ weight: 1
 
 by Matte Kirwin
 
-last edited 06 April 2023
+last edited 28 July 2025
 
 (sept 2022) i’m on vacation right now so this doc is incomplete. but it should have the bare minimum to get you started!
+
+[@eatingstuffoutside](https://www.instagram.com/eatingstuffoutside/)
 
 
 ## getting inspired and learning

@@ -53,6 +53,7 @@ cd public
 # Check if there are changes in public
 if git diff-index --quiet HEAD --; then
     echo -e "${YELLOW}⚠️  No changes in generated files${NC}"
+    CHANGES_DEPLOYED=false
 else
     echo -e "${YELLOW}📝 Committing generated files...${NC}"
     git add .
@@ -62,6 +63,7 @@ else
     git push origin main
     
     echo -e "${GREEN}✅ GitHub Pages updated${NC}"
+    CHANGES_DEPLOYED=true
 fi
 
 # Step 4: Update submodule reference in main repo

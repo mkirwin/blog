@@ -1,0 +1,144 @@
+/* Catppuccin Mocha Theme for Hugo Book */
+/* Based on https://github.com/catppuccin/catppuccin */
+
+@mixin theme-catppuccin {
+  // Catppuccin Mocha color palette
+  --ctp-base: #1e1e2e;      // Main background
+  --ctp-mantle: #181825;    // Darker background
+  --ctp-surface0: #313244;  // Surface colors
+  --ctp-surface1: #45475a;
+  --ctp-surface2: #585b70;
+  --ctp-overlay0: #6c7086;  // Overlay colors
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay2: #9399b2;
+  --ctp-subtext0: #a6adc8; // Subtler text
+  --ctp-subtext1: #bac2de;
+  --ctp-text: #cdd6f4;     // Main text
+  
+  // Accent colors
+  --ctp-blue: #89b4fa;     // Links
+  --ctp-lavender: #b4befe; // Visited links
+  --ctp-mauve: #cba6f7;    // Purple accent
+  --ctp-pink: #f5c2e7;     // Pink accent
+  --ctp-red: #f38ba8;      // Danger/errors
+  --ctp-peach: #fab387;    // Warnings
+  --ctp-yellow: #f9e2af;   // Highlights
+  --ctp-green: #a6e3a1;    // Success
+  --ctp-teal: #94e2d5;     // Info
+  --ctp-sky: #89dceb;      // Light info
+  --ctp-sapphire: #74c7ec; // Accent blue
+  
+  // Hugo Book theme variables
+  --gray-100: var(--ctp-surface0);
+  --gray-200: var(--ctp-surface1);
+  --gray-500: var(--ctp-overlay0);
+
+  --color-link: var(--ctp-blue);
+  --color-visited-link: var(--ctp-lavender);
+
+  --body-background: var(--ctp-base);
+  --body-font-color: var(--ctp-text);
+
+  --icon-filter: brightness(0) invert(1);
+
+  --hint-color-info: var(--ctp-sky);
+  --hint-color-warning: var(--ctp-peach);
+  --hint-color-danger: var(--ctp-red);
+}
+
+// Apply Catppuccin theme
+:root {
+  @include theme-catppuccin;
+}
+
+// Additional styling for better Catppuccin integration
+.book-menu {
+  background: var(--ctp-mantle) !important;
+  border-right: 1px solid var(--ctp-surface0);
+}
+
+.book-header {
+  background: var(--ctp-mantle) !important;
+  border-bottom: 1px solid var(--ctp-surface0);
+}
+
+.book-search input {
+  background: var(--ctp-surface0) !important;
+  border: 1px solid var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+  
+  &:focus {
+    border-color: var(--ctp-blue) !important;
+    box-shadow: 0 0 0 2px rgba(137, 180, 250, 0.2) !important;
+  }
+}
+
+.book-toc nav > ul > li > a {
+  color: var(--ctp-subtext1) !important;
+  
+  &:hover {
+    color: var(--ctp-blue) !important;
+  }
+}
+
+// Code blocks
+pre, code {
+  background: var(--ctp-mantle) !important;
+  border: 1px solid var(--ctp-surface0) !important;
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid var(--ctp-blue) !important;
+  background: var(--ctp-surface0) !important;
+}
+
+// Tables
+table {
+  thead {
+    background: var(--ctp-surface0) !important;
+  }
+  
+  tr:nth-child(even) {
+    background: var(--ctp-surface0) !important;
+  }
+  
+  td, th {
+    border-color: var(--ctp-surface1) !important;
+  }
+}
+
+// Buttons and interactive elements
+.book-btn {
+  background: var(--ctp-blue) !important;
+  color: var(--ctp-base) !important;
+  
+  &:hover {
+    background: var(--ctp-sky) !important;
+  }
+}
+
+// Selection color
+::selection {
+  background: var(--ctp-mauve) !important;
+  color: var(--ctp-base) !important;
+}
+
+// Scrollbar (webkit browsers)
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ctp-mantle);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ctp-surface2);
+  border-radius: 4px;
+  
+  &:hover {
+    background: var(--ctp-overlay0);
+  }
+}

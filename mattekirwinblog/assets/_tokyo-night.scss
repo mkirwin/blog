@@ -1,0 +1,177 @@
+/* Tokyo Night Theme for Hugo Book */
+/* Based on https://github.com/enkia/tokyo-night-vscode-theme */
+
+@mixin theme-tokyo-night {
+  // Tokyo Night color palette
+  --tn-bg: #1a1b26;        // Main background
+  --tn-bg-dark: #16161e;   // Darker background
+  --tn-bg-highlight: #292e42; // Highlighted background
+  --tn-terminal-black: #414868; // Dark surface
+  --tn-fg: #c0caf5;        // Main foreground/text
+  --tn-fg-dark: #a9b1d6;   // Darker text
+  --tn-fg-gutter: #3b4261; // Gutter/line numbers
+  --tn-comment: #565f89;   // Comments
+  --tn-selection: #33467c; // Selection background
+  
+  // Accent colors
+  --tn-blue: #7aa2f7;      // Primary blue
+  --tn-cyan: #7dcfff;      // Cyan
+  --tn-purple: #bb9af7;    // Purple
+  --tn-magenta: #bb9af7;   // Magenta (same as purple)
+  --tn-red: #f7768e;       // Red/errors
+  --tn-orange: #ff9e64;    // Orange/warnings
+  --tn-yellow: #e0af68;    // Yellow
+  --tn-green: #9ece6a;     // Green/success
+  --tn-teal: #73daca;      // Teal
+  
+  // Hugo Book theme variables
+  --gray-100: var(--tn-bg-highlight);
+  --gray-200: var(--tn-terminal-black);
+  --gray-500: var(--tn-comment);
+
+  --color-link: var(--tn-blue);
+  --color-visited-link: var(--tn-purple);
+
+  --body-background: var(--tn-bg);
+  --body-font-color: var(--tn-fg);
+
+  --icon-filter: brightness(0) invert(1);
+
+  --hint-color-info: var(--tn-cyan);
+  --hint-color-warning: var(--tn-orange);
+  --hint-color-danger: var(--tn-red);
+}
+
+// Apply Tokyo Night theme
+:root {
+  @include theme-tokyo-night;
+}
+
+// Additional styling for better Tokyo Night integration
+.book-menu {
+  background: var(--tn-bg-dark) !important;
+  border-right: 1px solid var(--tn-bg-highlight);
+}
+
+.book-header {
+  background: var(--tn-bg-dark) !important;
+  border-bottom: 1px solid var(--tn-bg-highlight);
+}
+
+.book-search input {
+  background: var(--tn-bg-highlight) !important;
+  border: 1px solid var(--tn-terminal-black) !important;
+  color: var(--tn-fg) !important;
+  
+  &:focus {
+    border-color: var(--tn-blue) !important;
+    box-shadow: 0 0 0 2px rgba(122, 162, 247, 0.2) !important;
+  }
+}
+
+.book-toc nav > ul > li > a {
+  color: var(--tn-fg-dark) !important;
+  
+  &:hover {
+    color: var(--tn-blue) !important;
+  }
+}
+
+// Code blocks with Tokyo Night syntax highlighting
+pre, code {
+  background: var(--tn-bg-dark) !important;
+  border: 1px solid var(--tn-bg-highlight) !important;
+  color: var(--tn-fg) !important;
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid var(--tn-blue) !important;
+  background: var(--tn-bg-highlight) !important;
+  color: var(--tn-fg-dark) !important;
+}
+
+// Tables
+table {
+  thead {
+    background: var(--tn-bg-highlight) !important;
+    color: var(--tn-fg) !important;
+  }
+  
+  tr:nth-child(even) {
+    background: var(--tn-bg-highlight) !important;
+  }
+  
+  td, th {
+    border-color: var(--tn-terminal-black) !important;
+  }
+}
+
+// Buttons and interactive elements
+.book-btn {
+  background: var(--tn-blue) !important;
+  color: var(--tn-bg) !important;
+  border: none !important;
+  
+  &:hover {
+    background: var(--tn-cyan) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(122, 162, 247, 0.3) !important;
+  }
+}
+
+// Selection color
+::selection {
+  background: var(--tn-selection) !important;
+  color: var(--tn-fg) !important;
+}
+
+// Scrollbar (webkit browsers)
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tn-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tn-terminal-black);
+  border-radius: 4px;
+  
+  &:hover {
+    background: var(--tn-comment);
+  }
+}
+
+// Links with nice hover effects
+a {
+  transition: color 0.2s ease-in-out;
+  
+  &:hover {
+    color: var(--tn-cyan) !important;
+  }
+}
+
+// Breadcrumbs
+.book-breadcrumbs a {
+  color: var(--tn-comment) !important;
+  
+  &:hover {
+    color: var(--tn-blue) !important;
+  }
+}
+
+// Page navigation
+.book-pager {
+  a {
+    background: var(--tn-bg-highlight) !important;
+    border: 1px solid var(--tn-terminal-black) !important;
+    
+    &:hover {
+      background: var(--tn-terminal-black) !important;
+      border-color: var(--tn-blue) !important;
+    }
+  }
+}

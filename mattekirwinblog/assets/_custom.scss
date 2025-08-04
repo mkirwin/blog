@@ -1,0 +1,94 @@
+/* Custom Theme for mattekir.win */
+
+// Choose your theme by uncommenting one of these imports:
+
+// 🌸 Catppuccin Mocha - Warm, cozy colors with excellent contrast
+@import "catppuccin";
+
+// 🌙 Tokyo Night - Cool, modern colors inspired by the night
+// // @import "tokyo-night";
+
+/* 
+To switch themes:
+1. Comment out the current @import line (add // at the beginning)
+2. Uncomment the theme you want (remove // from the beginning)
+3. Run: ./deploy.sh "Switch to [theme name] theme"
+
+Example:
+For Tokyo Night, change this:
+  @import "catppuccin";
+  // // @import "tokyo-night";
+
+To this:
+  // @import "catppuccin";
+  // // @import "tokyo-night";
+*/
+
+// Additional custom styles can go below this line
+// Feel free to add your own customizations here!
+
+/* 🔤 FONT OPTIONS - Uncomment your preferred choice */
+
+// Option 1: Use existing Roboto Mono for everything (minimal, clean)
+// body {
+//   font-family: 'Roboto Mono', monospace !important;
+//   font-weight: 400;
+//   line-height: 1.6;
+// }
+
+// Option 2: JetBrains Mono (very popular, great for reading)
+// @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+// body {
+//   font-family: 'JetBrains Mono', monospace !important;
+//   font-weight: 400;
+//   line-height: 1.7;
+// }
+
+// Option 3: Fira Code (clean, modern)
+// @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+// body {
+//   font-family: 'Fira Code', monospace !important;
+//   font-weight: 400;
+//   line-height: 1.7;
+// }
+
+// Option 4: IBM Plex Mono (IBM's beautiful monospace)
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+body {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+// Option 5: System monospace (uses your OS default)
+// body {
+//   font-family: ui-monospace, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace !important;
+//   line-height: 1.6;
+// }
+
+// Custom font styling
+.book-brand {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+// Improve readability
+.book-page {
+  line-height: 1.7;
+}
+
+// Nice transitions
+* {
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+// Focus states for accessibility
+:focus {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+// Smooth scroll behavior
+html {
+  scroll-behavior: smooth;
+}

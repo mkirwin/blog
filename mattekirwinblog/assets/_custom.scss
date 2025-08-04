@@ -105,19 +105,42 @@ html {
   }
 }
 
-// ✨ Sparkly header
+// ✨ Sparkly header with responsive design
 .book-brand {
   position: relative;
-  padding-right: 30px; // Make room for the sparkle
+  
+  // Desktop: plenty of space
+  padding-right: 50px; 
   
   &::after {
     content: "🌙🍓✨";
     position: absolute;
-    right: 5px; // Position inside the padding
+    right: 5px;
     top: 50%;
     transform: translateY(-50%);
     animation: sparkle 4s ease-in-out infinite;
     opacity: 0.7;
+    font-size: 0.8em; // Make emojis slightly smaller
+  }
+  
+  // 📱 MOBILE: Smaller screens (tablet and below)
+  @media (max-width: 900px) {
+    padding-right: 60px; // More space needed on mobile
+    
+    &::after {
+      right: 8px; // Move emojis further from edge
+      font-size: 0.6em; // Even smaller on mobile
+    }
+  }
+  
+  // 📱 TINY MOBILE: Very small screens
+  @media (max-width: 480px) {
+    padding-right: 70px; // Maximum space
+    
+    &::after {
+      right: 10px;
+      font-size: 0.6em; // Smallest size
+    }
   }
 }
 

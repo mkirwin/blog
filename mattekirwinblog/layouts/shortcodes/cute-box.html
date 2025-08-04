@@ -1,0 +1,21 @@
+<div class="cute-box nature-box">
+  {{ if .Get "title" }}
+  <h4 style="margin-top: 0; color: var(--color-link);">{{ .Get "title" }}</h4>
+  {{ end }}
+  {{ if .Get "icon" }}
+  <span style="font-size: 1.5em; margin-right: 8px;">{{ .Get "icon" }}</span>
+  {{ end }}
+  <div class="cute-box-content">
+    {{ .Inner }}
+  </div>
+</div>
+
+<style>
+.cute-box {
+  position: relative;
+}
+
+.cute-box-content p:last-child {
+  margin-bottom: 0;
+}
+</style>

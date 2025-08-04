@@ -1,0 +1,39 @@
+<div class="foraging-tip nature-box">
+  <div class="tip-header">
+    <span class="tip-icon">🌿</span>
+    <h4>Foraging Tip</h4>
+  </div>
+  <div class="tip-content">
+    {{ .Inner }}
+  </div>
+</div>
+
+<style>
+.foraging-tip {
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--color-link);
+  background: rgba(var(--color-link), 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tip-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.tip-icon {
+  font-size: 1.2em;
+}
+
+.tip-content {
+  opacity: 0.9;
+}
+
+.tip-content p:last-child {
+  margin-bottom: 0;
+}
+</style>

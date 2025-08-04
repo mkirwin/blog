@@ -46,8 +46,16 @@ last edited 28 July 2025
 
 ## identification
 
+{{< foraging-tip >}}
+**Golden Rule**: Always have 3 forms of positive ID before eating anything!
+{{< /foraging-tip >}}
+
 * always have 3 forms of positive ID. 
 * even then, taste test. only eat a little (tbh see if you have a bad digestive reaction). **look up if it needs to be cooked first.**
+
+{{< cute-box title="Safety First!" icon="⚠️" >}}
+Even with proper identification, start with small amounts to test for allergic reactions. Some edible plants require cooking to be safe!
+{{< /cute-box >}}
 
 
 ### the three forms of identification i use

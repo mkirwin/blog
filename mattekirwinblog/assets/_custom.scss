@@ -92,3 +92,128 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* 🌟 CUTE CUSTOMIZATIONS - Add your magical touches here! */
+
+// 🍄 Fun hover effects for menu items
+.book-menu a {
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateX(5px);
+    color: var(--color-link) !important;
+  }
+}
+
+// ✨ Sparkly header
+.book-brand {
+  position: relative;
+  padding-right: 30px; // Make room for the sparkle
+  
+  &::after {
+    content: "🌙🍓✨";
+    position: absolute;
+    right: 5px; // Position inside the padding
+    top: 50%;
+    transform: translateY(-50%);
+    animation: sparkle 4s ease-in-out infinite;
+    opacity: 0.7;
+  }
+}
+
+// Make sure the header container doesn't clip the sparkle
+.book-header {
+  overflow: visible !important;
+}
+
+.book-menu {
+  overflow: visible !important;
+}
+
+@keyframes sparkle {
+  0%, 100% { 
+    opacity: 0.7; 
+    transform: translateY(-50%) scale(1);
+  }
+  50% { 
+    opacity: 1; 
+    transform: translateY(-50%) scale(1.1);
+  }
+}
+
+// 🌿 Nature-themed content boxes
+.nature-box {
+  border: 2px solid var(--color-link);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 1.5rem 0;
+  background: linear-gradient(135deg, 
+    rgba(137, 180, 250, 0.1) 0%, 
+    rgba(137, 180, 250, 0.05) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.nature-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--color-link), var(--color-visited-link));
+  border-radius: 12px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+// 🎈 Cute button styles
+.cute-button {
+  background: linear-gradient(45deg, var(--color-link), var(--color-visited-link));
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: var(--body-background);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(137, 180, 250, 0.3);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(137, 180, 250, 0.4);
+  }
+}
+
+// 🌸 Pretty selection colors
+::selection {
+  background: var(--color-link);
+  color: var(--body-background);
+}
+
+// 🦋 Floating back-to-top button (add to any page)
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--color-link);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--body-background);
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+  
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+  }
+}

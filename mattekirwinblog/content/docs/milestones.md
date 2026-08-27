@@ -10,11 +10,25 @@ weight: 1
 ---
 # milestones
 
+## 2026 (29)
+- started reading magazines on my phone on Libby 
+
+
+## 2025 (28)
+- princess muffalo <3
+- Tết đầu tiên ở Việt Nam
+- Bất đầu học tiếng Việt ở VLS
+- another kung fu tournament! got medals for the first time
+- started CPTSD therapy
+- -15% BW
+- learned about eating fiber and protein
+
 ## 2024 (27)
 - baked a lot of sourdough bread :D
 - took a break from everything
 - learned to identify a mourning dove (Zenaida macroura)
 - tried flameworking (glass) and throwing on a pottery wheel
+- Dream Prius
 
 ## 2023 (26)
 - biked from boston to canada

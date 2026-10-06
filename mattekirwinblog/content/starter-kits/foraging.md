@@ -71,3 +71,7 @@ Even with proper identification, start with small amounts to test for allergic r
 * google whatever you think you have found thru apps or books and TRIPLE CHECK ALL IDENTIFYING CHARACTERISTICS ARE THE SAME 
 
 **if you’re unsure at all DO NOT EAT**
+
+
+## Foraging Finds!
+{{< render-gallery folder="foraging" >}}

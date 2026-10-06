@@ -20,6 +20,10 @@ weight: 1
 - attack on titan
 - revolutionary girl utena
 
+## manga
+- blue period
+- my dress-up darling
+
 ## anime movies
 - suzume
 - spirited away
@@ -27,7 +31,9 @@ weight: 1
 
 ## tv shows
 - legend of korra
+- alchemy of souls
 - the owl house
+- orphan black
 - avatar: the last airbender
 - the dragon prince
 - one piece (netflix, live)
@@ -46,6 +52,8 @@ weight: 1
 - PET
 - iron widow
 - six crimson cranes / the dragon's promise
+- legendborn, bloodmarked, oathbound
+- iron widow, heavenly tyrant
 - the little prince
 - on earth we're briefly gorgeous
 - the magic fish
@@ -56,6 +64,12 @@ weight: 1
 - a mango shaped space
 - the miraculous journey of edward tulane
 - the tale of despereaux
+- dune and children of dune (i hated the dune movies, but the book is great)
+- the girl who drank the moon
+- the mountains sing
+- black sun
+- solutions and other problems & hyperbole and a half, allie brosh
+
 
 ## movies
 - mr. nobody

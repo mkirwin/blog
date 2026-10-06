@@ -1,6 +1,6 @@
 ---
 title: "milestones"
-weight: 1
+weight: 2
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -12,6 +12,9 @@ weight: 1
 
 ## 2026 (29)
 - started reading magazines on my phone on Libby 
+- bất đầu học tiếng việt trên mạng
+- placed at kf tournament
+- made sourdough with inclusions (e.g. cinnamon raisin, ginger + sage butter)
 
 
 ## 2025 (28)

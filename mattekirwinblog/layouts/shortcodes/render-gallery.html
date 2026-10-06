@@ -1,0 +1,11 @@
+{{ $folder := .Get "folder" }}
+{{ $path := printf "/static/images/%s/*" $folder }}
+{{ $files := readDir (printf "static/images/%s" $folder) }}
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+{{ range $files }}
+  {{ if in (slice ".jpg" ".jpeg" ".png" ".gif" ".webp" ".PNG" ".JPG") (path.Ext .Name) }}
+    <img src="/images/{{ $folder }}/{{ .Name }}" alt="{{ .Name }}" style="max-width: 100%; margin: 1rem 0;" />
+  {{ end }}
+{{ end }}
+</div>M
